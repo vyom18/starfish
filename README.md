@@ -13,7 +13,7 @@
 In addition to the main Hacktoberfest event, [Indeed.com](https://indeed.com) is sponsoring additional activities --
 see [Indeed Hacktoberfest 2020](https://engineering.indeedblog.com/indeed-hacktoberfest-2020/) for details
 
-Note: If you'd like to contribute, please either work on an issue labeled Hacktoberfest or create an issue to talk about the change you'd like to make. Spammy pull requests just to get swag are against the spirit of Hacktoberfest and won't be accepted. Remember, the purpose of Hacktoberfest is to support open source projects, not to create extra work for open source maintainers. If you're new to open source, please don't let this note discourge you though- we're happy to work with people who want to submit PRs in good faith, even if it's a small change or you're still learning :-)
+Note: If you'd like to contribute, please either work on an issue labeled Hacktoberfest or create an issue to talk about the change you'd like to make. Spammy pull requests just to get swag are against the spirit of Hacktoberfest and won't be accepted. Remember, the purpose of Hacktoberfest is to support open source projects and to contibute to open source your knowledge, not to create extra work for open source maintainers. If you're new to open source, please don't let this note discourge you though- we're happy to work with people who want to submit PRs in good faith, even if it's a small change or you're still learning :-)
 
 ### Hacktoberfest Open Office Hours
 Join us for open office hours to talk about issues, propose ideas, help review code, and more.
@@ -41,7 +41,7 @@ For More Info on what a FOSS Contributor Fund is, and how to start your own, [Wa
 # NOTE FOR CURRENT STARFISH USERS - BREAKING CHANGES
 Hi, thanks for using Starfish. Recently, we pushed up Starfish 2.0.0 which changes how we talk to GitHub's API, because the old way is now deprecated. When you pull in the latest code changes, you'll also want to look at [these Instructions](https://github.com/indeedeng/starfish/blob/master/README.md#then-get-yourself-github-authentication-credentials) to get a Personal Access Token for the GitHub API. Then, change your .env to use that token, instead of OAuth credentials.
 
-Also, the TIMEZONE_OFFSET environment variable has become TIMEZONE. You'll want to change that as well, and most likely change the value you're giving it, as explained [here](https://github.com/indeedeng/starfish#next-create-a-file-named-env-copy-the-contents-of-the-envtemplate-file-into-it-and-add-your-values-to-the-new-file)
+Also, the TIMEZONE_OFFSET environment variable has become TIMEZONE. You'll want to change that as well as per your application , and most likely change the value you're giving it, as explained [here](https://github.com/indeedeng/starfish#next-create-a-file-named-env-copy-the-contents-of-the-envtemplate-file-into-it-and-add-your-values-to-the-new-file)
 
 Make sure to run `npm ci` to update node packages.
 
@@ -53,7 +53,7 @@ New users, you don't have to worry about this - just follow the instructions in 
 #### First, clone the repo to your computer, then navigate to the starfish folder and run `npm ci`.
 - This project runs on **node 10.13.0 or higher**, node 12 is preferred.
 - `node -v `, will show you which version of node you're using in your machine.
-- If your version is below 10.13.0, either update to a compatible version of node, or [install nvm](https://github.com/nvm-sh/nvm#about) so that Starfish can use a compatible node version without affecting other applications on your system.
+- If your version is below 10.13.0, either update to a compatible version of node, or [install nvm](https://github.com/nvm-sh/nvm#about) so that Starfish can use a compatible node version without affecting other applications on your system and can run smoothly.
 
 #### Next, make a .csv file with the GitHub Ids you're interested in checking, and, if desired, an "alternate id" to go with each
 > #### Q&A Time!
@@ -121,7 +121,7 @@ You can also override the list of events to check by editing the "GITHUB_IMPORTA
 
 Caveats: The GitHub Rest API only holds the most recent 300 events for each user. Also, events older than 90 days will not be included (even if the total number of events in the timeline is less than 300). So, if you're looking for contributions from 4 months ago, Starfish won't be able to find any. And if you are looking for contributions from 2 months ago, and one or more of your users is very active (300 events or more per month!), your result might not be completely accurate. 
 
-Also, we know that there are many types of contributions - not just code, and not just on GitHub. At Indeed, we have a Google form Indeedians can fill out to tell us about other contributions they've made. We recommend you do that as well.
+Also, we know that there are many types of contributions- not just code, and not just on GitHub. At Indeed, we have a Google form Indeedians can fill out to tell us about other contributions they've made. We recommend you do that as well to explore new things your knowlegde.
 
 Lastly, if you're using Starfish we'd love to hear about it. What are you using Starfish for? Does it work well for you? You can leave us a comment by creating an issue or by emailing [danisyellis](https://github.com/danisyellis).
 
